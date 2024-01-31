@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <!-- <link rel="stylesheet" href="./styles.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    />
+    <style>
+      @page {
+        margin-top: 2in !important;
+        margin-bottom: 2in !important;
+        margin-left: 1.5in !important;
+        margin-right: 1.5in !important;
+      }
+      @media print {
+        @page {
+          margin-top: 24px !important;
+          margin-bottom: 24px !important;
+        }
+        footer {
+          page-break-after: always;
+        }
+        html {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          min-width: 100%;
+        }
+      }
+      body {
+        font-family: "Inter", system-ui, "Segoe UI", "Helvetica Neue", Arial,
+          sans-serif;
+        color: #000000;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-16 {
+        font-size: 16px;
+      }
+
+      .font-bold {
+        font-weight: 600;
+      }
+      h3 {
+        margin: 0;
+      }
+
+      tr,
+      td {
+        height: 25px;
+      }
+
+      .h-10 {
+        height: 10px;
+      }
+
+      .h-35 {
+        height: 35px;
+      }
+
+      .h-50 {
+        height: 50px;
+      }
+
+      .mh-60 {
+        min-height: 60px;
+      }
+
+      .w-100 {
+        width: 100%;
+      }
+
+      .mr-1 {
+        margin: 1rem;
+      }
+
+      .mt-1 {
+        margin-top: 1rem;
+      }
+
+      .mb-1 {
+        margin-bottom: 1rem;
+      }
+
+      .m-top-bottom-10 {
+        margin: 10px 0;
+      }
+
+      .m-left-right-1 {
+        margin: 0 1rem;
+      }
+      .heading {
+        font-size: 14px;
+      }
+
+      .heading-container {
+        padding: 8px 0;
+        border-top: 1px solid #616061;
+        border-bottom: 1px solid #616061;
+      }
+
+      .bill-container {
+        max-width: 300px;
+        font-size: 14px;
+      }
+
+      .bill-sub-container {
+      }
+
+      .bill-header {
+        font-weight: 600;
+        color: #171717;
+      }
+
+      .bill-body {
+        color: #464646;
+        vertical-align: baseline;
+      }
+
+      .border-gray {
+        border: 1px solid #dedfe1;
+      }
+
+      .border-black {
+        border: 1px solid #171717;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="bill-container">
+      <section class="mr-1">
+        <div>
+          <h2 class="text-center">Slice Shabhu</h2>
+        </div>
+        <div>
+          <h3 class="text-16">End of Day Report</h3>
+          <p class="m-top-bottom-10">Printed on 04 Apr 2023 04:17 PM</p>
+        </div>
+      </section>
+      <section class="border-gray mt-1 mb-1"></section>
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">SALES SUMMARY</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-35">
+            <tr>
+              <td>Net Sales</td>
+              <td class="text-right">$1200.00</td>
+            </tr>
+          </thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">$103220.00</td>
+            </tr>
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">$1323200.00</td>
+            </tr>
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">$13323232300.00</td>
+            </tr>
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">$100.00</td>
+            </tr>
+            <tr class="bill-header">
+              <td>Gross Sales</td>
+              <td class="text-right">$1800.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Category Summary -->
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">CATEGORY SUMMARY</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-35">
+            <tr>
+              <td>Category</td>
+              <td class="text-right">Quantity</td>
+              <td class="text-right">Net Sales</td>
+            </tr>
+          </thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">20</td>
+              <td class="text-right">$103220.00</td>
+            </tr>
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">20</td>
+              <td class="text-right">$1323200.00</td>
+            </tr>
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">20</td>
+              <td class="text-right">$1332300.00</td>
+            </tr>
+            <tr>
+              <td>Tip</td>
+              <td class="text-right">20</td>
+              <td class="text-right">$100.00</td>
+            </tr>
+            <tr class="bill-header">
+              <td>Total</td>
+              <td class="text-right">20</td>
+              <td class="text-right">$1800.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Payment Summary -->
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">PAYMENT SUMMARY</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-35">
+            <tr>
+              <td>Mode</td>
+              <td class="text-right">Payments Made</td>
+            </tr>
+          </thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>Credit Card</td>
+              <td class="text-right">$103220.00</td>
+            </tr>
+            <tr>
+              <td>Credit Card</td>
+              <td class="text-right">$1323200.00</td>
+            </tr>
+            <tr>
+              <td>Credit Card</td>
+              <td class="text-right">$13323232300.00</td>
+            </tr>
+            <tr>
+              <td>Credit Card</td>
+              <td class="text-right">$100.00</td>
+            </tr>
+            <tr class="bill-header">
+              <td>Total</td>
+              <td class="text-right">$1800.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Discounts -->
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">DISCOUNTS</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-35">
+            <tr>
+              <td>Order #</td>
+              <td class="text-right">Order Amt</td>
+              <td class="text-right">Discount %</td>
+            </tr>
+          </thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>324567</td>
+              <td class="text-right">$210.00</td>
+              <td class="text-right">$400.00</td>
+            </tr>
+            <tr>
+              <td>324567</td>
+              <td class="text-right">$210.00</td>
+              <td class="text-right">$400.00</td>
+            </tr>
+            <tr>
+              <td>324567</td>
+              <td class="text-right">$210.00</td>
+              <td class="text-right">$400.00</td>
+            </tr>
+            <tr>
+              <td>324567</td>
+              <td class="text-right">$210.00</td>
+              <td class="text-right">$400.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Voids -->
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">VOIDS</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-50">
+            <tr>
+              <td>Order#</td>
+              <td class="text-right">Order Total</td>
+              <td class="text-right">Void Amt</td>
+              <td class="text-right">Reason</td>
+            </tr>
+          </thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>10232</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">Waiter Error Testing</td>
+            </tr>
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">Waiter Error Testing Testing</td>
+            </tr>
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">Waiter Error Testing Testing Testing</td>
+            </tr>
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">Waiter Error Testing</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Employee summary -->
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">EMPLOYEE SUMMARY</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-50">
+            <tr>
+              <td>Employee</td>
+              <td class="text-right">Net Sales</td>
+              <td class="text-right">Tip+ Gratuity</td>
+              <td class="text-right">Hours Worked</td>
+            </tr>
+          </thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4</td>
+            </tr>
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4</td>
+            </tr>
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4</td>
+            </tr>
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Sales by payment method -->
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">SALES BY PAYMENT METHOD</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-50">
+            <tr>
+              <td></td>
+              <td class="text-right">Sales</td>
+              <td class="text-right">Tip+ Gratuity</td>
+              <td class="text-right">Tip% + Gratuity%</td>
+            </tr>
+          </thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>Card</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4.00%</td>
+            </tr>
+            <tr>
+              <td>Card</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4.00%</td>
+            </tr>
+            <tr>
+              <td>Justin</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4.00%</td>
+            </tr>
+            <tr class="bill-header">
+              <td>Total</td>
+              <td class="text-right">$800.00</td>
+              <td class="text-right">$20.00</td>
+              <td class="text-right">4.00%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!-- Settlement Summary -->
+      <section class="bill-sub-container mr-1">
+        <div>
+          <h3 class="heading heading-container">SETTLEMENT SUMMARY</h3>
+        </div>
+        <table class="w-100">
+          <thead class="bill-header h-10"></thead>
+          <tbody class="bill-body">
+            <tr>
+              <td>House owes John</td>
+              <td class="text-right">$103220.00</td>
+            </tr>
+            <tr>
+              <td>House owes John</td>
+              <td class="text-right">$1323200.00</td>
+            </tr>
+            <tr>
+              <td>House owes John</td>
+              <td class="text-right">$13323232300.00</td>
+            </tr>
+            <tr>
+              <td>House owes John</td>
+              <td class="text-right">$100.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="mh-60"></section>
+      <section class="mr-1">
+        <div class="border-black m-left-right-1"></div>
+        <p class="text-center font-bold">Signature</p>
+      </section>
+    </main>
+  </body>
+</html>
